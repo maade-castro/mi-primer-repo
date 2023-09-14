@@ -1,0 +1,163 @@
+/*******************REGLAS GENERALES DESKTOP*****************/
+.main__alta {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.form__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas de igual tamaño */
+    gap: 10px;
+    /* Espacio entre los items */
+    overflow: hidden;
+}
+
+.form__container {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    width: 70vw;
+    height: 70vh;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(223, 124, 2, 0.862);
+    font-family: "Josefin Sans", sans-serif;
+
+    h1 {
+        color: #e26d0d;
+        /* margin: 50px auto; */
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /*ITEMS*/
+    .form__nombre,
+    .form__precio,
+    .form__stock,
+    .form__marca,
+    .form__categoria,
+    .edad,
+    .description__small,
+    .descrption__large,
+    .envio,
+    .imagen .button__submit {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0px 5px;
+    }
+
+    /*INPUT*/
+}
+
+input#nombre,
+input#precio,
+input#stock,
+input#marca,
+input#categoria,
+input#edad {
+    margin: 15px 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 3px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+}
+
+/*TEX-AREA*/
+textarea#descrption__small,
+textarea#descrption__large {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+/*BUTTON*/
+.button__submit {
+    background-color: #0fb91a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    width: 100px;
+}
+
+.button__submit:hover {
+    background-color: #2f7602;
+    transform: scale(1.2);
+    /*agranda el boton*/
+}
+
+/*************************MEDIAS QUERYS*******************/
+@media (max-width: 700px) {
+
+    .form__container {
+        width: 85vw;
+    }
+}
+
+/*******MQ*****************/
+@media (max-width: 670px) {
+
+    textarea#descrption__small,
+    textarea#descrption__large {
+        width: 90%;
+    }
+
+    .form__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40%;
+    }
+
+    .form__form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*******MQ*******/
+@media (max-width: 280px) {
+
+    .form__container {
+
+        .form__nombre,
+        .form__precio,
+        .form__stock,
+        .form__marca,
+        .form__categoria,
+        .edad,
+        .description__small,
+        .descrption__large,
+        .envio,
+        .imagen,
+        .button__submit {
+            font-size: 12px;
+        }       
+        margin-bottom: 40%;
+        margin-top: 100px;
+        width: auto;
+    }
+    .form__form {
+        width: 100vw;
+        margin: auto;
+    }
+    textarea#descrption__small,
+    textarea#descrption__large {
+        width: 70%;
+    }
+}

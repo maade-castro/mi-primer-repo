@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es-Ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css"> <!-- css-->
+    <script src="./script.js"></script> <!--JS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo_circular_new.png" alt="logo" width="50px" height="50px">
+        <!--funcion para el menu-->
+        <a href="javascript:void(0);" onclick='openMenu()' id="menu"><i class="fa-solid fa-bars"></i></a>
+        <!--BARRA NAEGACION-->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <!--*****************-->
+        <nav class="navbar">
+            <a href="./index.html" class="nav__active">Home</a>
+            <a href="./alta.html">Alta</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="" class=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <!--script de fontawesome para traer los iconos-->
+    <script src="https://kit.fontawesome.com/68d641df06.js" crossorigin="anonymous"></script>
+
+    <main>
+        <!--*****************GROUP**************-->
+        <div class="head__container">
+            <img src="./img/Group shot.jpg" alt="grupo">
+            <h1 class="head__tittle">Demostra que sos fan!</h1>
+            <p class="head__p"> Mira todos los personajes coleccionables que tenemos para vos</p>
+
+        </div>
+
+        <!--*****************CARDS**************-->
+        <div class="cards__container">
+            <!--CARD 1-->
+            <div class="card">
+                <img src="./img/naruto-1-removebg-preview.png" alt="naruto" width="180px" height="180px">
+                <div class="card__description">
+                    <h2 class="card__title">Naruto Uzumaki</h2>
+                    <p class="card__mood">Modo sabio</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--******************-->
+            <!--Card 2-->
+            <div class="card">
+                <img src="./img/naruto-ramen-removebg-preview.png" alt="naruto" width="200px" height="200px">
+                <div class="card__description">
+                    <h2 class="card__title">Naruto Uzumaki</h2>
+                    <p class="card__mood">Ramen-time</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--***************************-->
+            <!--Card #3-->
+            <div class="card">
+                <img src="./img/sasuke-removebg-preview.png" alt="sazuke" width="180px" height="180px">
+                <div class="card__description">
+                    <h2 class="card__title">Sasuke Uchiha</h2>
+                    <p class="card__mood">Clan Uchiha</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--**************************-->
+            <!--Card #4-->
+            <div class="card">
+                <img src="./img/zakura-1-removebg-preview.png" alt="naruto" width="180px" height="180px">
+                <div class="card__description">
+                    <h2 class="card__title">Sakura Haruno</h2>
+                    <p class="card__mood">Clan Haruno</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--*************-->
+            <!--Card #5-->
+            <div class="card">
+                <img src="./img/kakashi-1-removebg-preview.png" alt="naruto" width="180px" height="180px">
+                <div class="card__description">
+                    <h2 class="card__title">Kakashi Hatake</h2>
+                    <p class="card__mood">Sensei</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--*********************************-->
+            <!--Card #6-->
+            <div class="card">
+                <img src="./img/itachi-1-removebg-preview.png" alt="naruto" width="180px" height="180px">
+                <div class="card__description">
+                    <h2 class="card__title">Itachi Uchiha</h2>
+                    <p class="card__mood"> Akatsuki</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--**********************************-->
+            <div class="card">
+                <img src="./img/tsunade-removebg-preview.png" alt="tsunade" width="230px" height="230px">
+                <div class="card__description">
+                    <h2 class="card__title">Lady Tsunade</h2>
+                    <p class="card__mood"> Hokage</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--Card #7-->
+            <div class="card">
+                <img src="./img/shikamaru-1-removebg-preview.png" alt="naruto" width="230px" height="230px">
+                <div class="card__description">
+                    <h2 class="card__title">Shikamaru Nara</h2>
+                    <p class="card__mood"> Chūnin</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--***********************************-->
+            <!--Card #8-->
+            <div class="card">
+                <img src="./img/Funko_Pop__Animation__Naruto_-_Gaara-removebg-preview.png" alt="naruto" width="180px"
+                    height="180px">
+                <div class="card__description">
+                    <h2 class="card__title">Gaara de la Arena</h2>
+                    <p class="card__mood"> Kazekage</p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--************************************-->
+            <!--Card #9-->
+            <div class="card">
+                <img src="./img/orochimaru-1-removebg-preview.png" alt="naruto" width="180px" height="180px">
+                <div class="card__description">
+                    <h2 class="card__title">Orochimaru</h2>
+                    <p class="card__mood"> Sannin </p>
+                    <div class="card__buy">
+                        <h3>$3.500</h3>
+                    </div>
+                    <button class="card__button"> Comprar </button>
+                </div>
+            </div>
+            <!--*************************************-->
+        </div>
+    </main>
+    <a href="" class="ws__icon"> 
+        <img src="./img/icon-ws-Animado.gif" alt="">
+       </a>
+       <hr>
+    <!--FIN MAIN-->
+    <footer>
+        <section class="container__footer">
+            <article class="pagar">
+                <a href=""><i class="fa-regular fa-credit-card"></i></a>
+                <p>Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta con Mercado Crédito.</p>
+            </article>
+            <article class="location">
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <p>Estamos ubicados en microcentro, Buenos Aires, Argentina</p>
+            </article>
+            <article class="delivery">
+                <a href=""><i class="fa-solid fa-truck"></i></a>
+                <p>Contamos con envio gratis en toda la ciudad</p>
+            </article>
+        </section>
+        <hr>
+        <section class="social-media">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <p>Copyright 1972-2023 | Todos los derechos reservados</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

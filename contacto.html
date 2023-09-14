@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-Ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css"> <!-- css-->
+    <script src="./script.js"></script> <!--JS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./img/logo_circular_new.png" alt="logo" width="50px" height="50px">
+        <!--funcion para el menu-->
+        <a href="javascript:void(0);" onclick='openMenu()' id="menu"><i class="fa-solid fa-bars"></i></a> 
+        <!--BARRA NAEGACION-->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+          </div>
+          <!--*****************-->
+        <nav class="navbar">
+            <a href="./index.html" >Home</a>
+            <a href="./alta.html">Alta</a>
+            <a href="./contacto.html" class="nav__active">Contacto</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="" class="nav__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <!--script de fontawesome para traer los iconos-->
+    <script src="https://kit.fontawesome.com/68d641df06.js" crossorigin="anonymous"></script>
+
+<!--****************INICIO MAIN***********-->
+    <main>
+        <div id="contac__container" class="contac__container">
+            <h1>Formulario de Contacto:</h1>
+            <form class="form">
+
+                <div class="contac__nombre">
+                    <label for="nombreC">Nombre</label>
+                    <input type="text" id="contac__nombre" name="nombreC" required>
+                    <p class="contac__msj" id="msj__contacNombre"></p>
+                </div>
+
+
+                <div class="contac__mail">
+                    <label for="mail">Mail</label>
+                    <input type="email" id="mail" name="mail" required>
+                    <p class="contac__msj" id="msj__contacMail"></p>
+                </div>
+                
+
+                <div class="comentario">
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" maxlength="200"
+                        placeholder="maximo 200 caracteres "></textarea>
+                </div>
+                
+                <button type="submit" class="button__submit">Enviar</button>
+
+            </form>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <section class="container__footer">
+            <article class="pagar">
+                <a href=""><i class="fa-regular fa-credit-card"></i></a>
+                <p>Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta con Mercado Crédito.</p>
+            </article>
+            <article class="location">
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <p>Estamos ubicados en microcentro, Buenos Aires, Argentina</p>
+            </article>
+            <article class="delivery">
+                <a href=""><i class="fa-solid fa-truck"></i></a>
+                <p>Contamos con envio gratis en toda la ciudad</p>
+            </article>
+        </section>
+        <hr>
+        <section class="social-media">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <p>Copyright 1972-2023 | Todos los derechos reservados</p>
+        </section>
+    </footer>
+    <script src="./script.js"></script> <!--JS-->
+</body>
+</html>

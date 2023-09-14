@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-Ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css"> <!-- css-->
+    <script src="./script.js"></script> <!--JS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo_circular_new.png" alt="logo" width="50px" height="50px">
+        <!--funcion para el menu-->
+        <a href="javascript:void(0);" onclick='openMenu()' id="menu"><i class="fa-solid fa-bars"></i></a>
+        <!--BARRA NAEGACION-->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <!--*****************-->
+        <nav class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./alta.html" class="nav__active">Alta</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./nosotros.html">Nosotros</a>
+            <a href="" class="nav__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <!--script de fontawesome para traer los iconos-->
+    <script src="https://kit.fontawesome.com/68d641df06.js" crossorigin="anonymous"></script>
+    <!--Fin header-->
+
+    <!--****************INICIO MAIN**********-->
+    <main class="main__alta">
+        <div id="form__container" class="form__container">
+            <h1>Complete el Formulario:</h1>
+            <form class="form__form">
+
+                <div class="form__nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre"  name="nombre" required>
+                    <p class="form__msj" id="msj__nombre"></p>
+                </div>
+
+                <div class="form__precio">
+                    <label for="precio">Precio</label>
+                    <input type="text" id="precio" name="precio" required>
+                    <p class="form__msj" id="msj__precio"></p>
+                </div>
+
+                <div class="form__stock">
+                    <label for="stock">Stock</label>
+                    <input type="text" id="stock" name="stock" required>
+                    <p class="form__msj" id="msj__stock"></p>
+                </div>
+
+                <div class="form__marca">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca" name="marca" required>
+                    <p class="form__msj" id="msj__marca"></p>
+                </div>
+
+                <div class="form__categoria">
+                    <label for="categoria">Categoria</label>
+                    <input type="text" id="categoria" name="categoria" required>
+                    <p class="form__msj" id="msj__categoria"></p>
+                </div>
+
+                <div class="edad">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" max="99" required>
+                    <p class="form__msj" id="msj__edad"></p>
+                    <!-- min define la edad mínima y 'max' define la edad máxima permitida -->
+                </div>
+
+                <div class="description__small">
+                    <label for="descrption__small">Pequeña Descripcion</label>
+                    <textarea id="descrption__small" name="descrption__small" rows="4" cols="50" maxlength="50"
+                        placeholder="maximo 50 caracteres"></textarea>
+                        <p class="form__msj" id="msj__small"></p>
+                    <!-- 'rows' define el número de filas y 'cols' el número de columnas visibles -->
+                </div>
+
+                <div class="descrption__large">
+                    <label for="descrption__large">Descripcion Larga</label>
+                    <textarea id="descrption__large" name="descrption__large" rows="4" cols="50" maxlength="200"
+                        placeholder="maximo 200 caracteres "></textarea>
+                </div>
+
+                <div class="envio">
+                    <label for="envio">Envio</label><br>
+                    <input type="radio" id="sinCargo" name="envio" value="sinCargo">
+                    <label for="sinCargo">Sin Cargo</label><br>
+                    <input type="radio" id="conCargo" name="envio" value="conCargo">
+                    <label for="conCargo">Pago</label><br>
+                    <p class="form__msj" id="msj__envio"></p>
+                </div>
+
+                <div class="imagen">
+                    <label for="imagen">Adjuntar imagen:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                    <!-- 'accept' especifica el tipo de archivos que se pueden seleccionar (en este caso, imágenes) -->
+                    <p class="form__msj" id="msj__imagen"></p>
+                </div>
+                <button type="submit" class="button__submit">Enviar</button>
+
+            </form>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <section class="container__footer">
+            <article class="pagar">
+                <a href=""><i class="fa-regular fa-credit-card"></i></a>
+                <p>Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta con Mercado Crédito.</p>
+            </article>
+            <article class="location">
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <p>Estamos ubicados en microcentro, Buenos Aires, Argentina</p>
+            </article>
+            <article class="delivery">
+                <a href=""><i class="fa-solid fa-truck"></i></a>
+                <p>Contamos con envio gratis en toda la ciudad</p>
+            </article>
+        </section>
+        <hr>
+        <section class="social-media">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <p>Copyright 1972-2023 | Todos los derechos reservados</p>
+        </section>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

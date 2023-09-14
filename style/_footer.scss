@@ -1,0 +1,55 @@
+footer{
+    background-color: rgb(218, 219, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30vh;
+    
+}
+.container__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  rgb(224, 224, 224);
+  }
+  article{
+    border-left: 2px solid #d6d6d6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+  
+  .pagar,
+  .location,
+  .delivery {
+    text-align: center;
+  }
+  
+  .pagar i,
+  .location i,
+  .delivery i {
+    font-size: 30px;
+    margin-bottom: 3px;
+    margin-top: 10px;
+    color: rgb(90, 89, 89);
+  }
+  
+  .pagar p,
+  .location p,
+  .delivery p {
+    margin: 5px;
+    padding: 10px;
+  }
+  .social-media {
+    i {
+    color: rgb(35, 35, 35);
+    font-size: 24px;
+    margin: 7px 50px;
+
+    }
+    p{
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+    }
+  }

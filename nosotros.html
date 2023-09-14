@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-Ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css"> <!-- css-->
+    <script src="./script.js"></script> <!--JS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo_circular_new.png" alt="logo" width="50px" height="50px">
+        <!--funcion para el menu-->
+        <a href="javascript:void(0);" onclick='openMenu()' id="menu"><i class="fa-solid fa-bars"></i></a>
+        <!--BARRA NAEGACION-->
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fa-solid fa-search"></i></button>
+        </div>
+        <!--*****************-->
+        <nav class="navbar">
+            <a href="./index.html" >Home</a>
+            <a href="./alta.html">Alta</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./nosotros.html" class="nav__active">Nosotros</a>
+            <a href="" class="nav__cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <!--script de fontawesome para traer los iconos-->
+    <script src="https://kit.fontawesome.com/68d641df06.js" crossorigin="anonymous"></script>
+
+    <!--***************COMIENZO MAIN************-->
+    <main class="main__nostros">
+        <div class="nosotros__container">
+
+            <div class="nosotros__img">
+            <img src="./img/nosotros-removebg-preview.png" alt="">
+        </div>
+
+        <div class="nosotros__description">
+            <h1>Somos Nosotros</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae impedit eveniet quo voluptates, tempore facilis ratione enim debitis numquam aspernatur, facere similique officiis voluptatum amet. Culpa amet modi dolores adipisci autem placeat corporis, nostrum, nulla, odio unde consequatur iure.</p>
+        </div>
+        </div>
+
+        <div class="nosotros__lorem">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit possimus ullam harum, nostrum quod quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus quibusdam labore voluptatum aspernatur officia numquam officiis. Necessitatibus, quaerat saepe.</p>
+            <img src="./img/naruto-llamas-removebg-preview.png" alt="">
+        </div>
+
+    </main>
+    <!--FIN MAIN-->
+    <footer>
+        <section class="container__footer">
+            <article class="pagar">
+                <a href=""><i class="fa-regular fa-credit-card"></i></a>
+                <p>Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin tarjeta con Mercado Crédito.</p>
+            </article>
+            <article class="location">
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                <p>Estamos ubicados en microcentro, Buenos Aires, Argentina</p>
+            </article>
+            <article class="delivery">
+                <a href=""><i class="fa-solid fa-truck"></i></a>
+                <p>Contamos con envio gratis en toda la ciudad</p>
+            </article>
+        </section>
+        <hr>
+        <section class="social-media">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <p>Copyright 1972-2023 | Todos los derechos reservados</p>
+        </section>
+    </footer>
+</body>
+
+</html>
