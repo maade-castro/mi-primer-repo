@@ -41,7 +41,8 @@
   font-size: 1em;
   margin: 10px 5px;
   padding: 10px 10px;
-  border-radius: 30px; /* Redondear el fondo de cada enlace */
+  border-radius: 30px;
+  /* Redondear el fondo de cada enlace */
   transition: background-color 0.3s ease;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -92,7 +93,8 @@ body {
     flex-direction: column;
     font-size: 0.9em;
     align-items: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Fondo degradado oscuro solo para el menú */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    /* Fondo degradado oscuro solo para el menú */
     margin-top: 99%;
     height: 600%;
     position: absolute;
@@ -111,7 +113,8 @@ body {
 }
 @media (max-width: 829px) {
   header {
-    font-size: 5vw; /* Tamaño de fuente proporcional al tamaño del viewport */
+    font-size: 5vw;
+    /* Tamaño de fuente proporcional al tamaño del viewport */
     flex-direction: row-reverse;
     height: 10vh;
   }
@@ -157,7 +160,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 68vh; /* Ajusta la altura */
+  height: 68vh;
+  /* Ajusta la altura */
   text-align: center;
   margin-bottom: 0%;
   font-family: "Josefin Sans", sans-serif;
@@ -243,7 +247,8 @@ main {
 
 .card__button:hover {
   background-color: #2D4F9D;
-  transform: scale(1.2); /*agranda el boton*/
+  transform: scale(1.2);
+  /*agranda el boton*/
 }
 
 /*************************MEDIAS QUERYS*********************/
@@ -254,7 +259,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0px auto;
-    max-width: 1100px; /*maximo de pantalla*/
+    max-width: 1100px;
+    /*maximo de pantalla*/
   }
   .card {
     flex-basis: calc(33.33% - 20px);
@@ -264,25 +270,38 @@ main {
 /********************************************************** */
 @media (max-width: 829px) {
   .cards__container {
-    display: grid; /* Cambiamos a una disposición de cuadrícula */
-    grid-template-columns: repeat(3, 1fr); /* Dos columnas en la cuadrícula */
-    grid-gap: 1px; /* Espaciado entre las tarjetas */
-    margin: 50px 10; /* Ajustamos el margen */
+    display: grid;
+    /* Cambiamos a una disposición de cuadrícula */
+    grid-template-columns: repeat(3, 1fr);
+    /* Dos columnas en la cuadrícula */
+    grid-gap: 1px;
+    /* Espaciado entre las tarjetas */
+    margin: 50px 10;
+    /* Ajustamos el margen */
   }
   .card {
-    flex-basis: 100px; /* Ancho completo en pantallas pequeñas */
-    max-width: -60px; /* Máximo ancho de las tarjetas */
-    margin: 30px auto; /* Ajustamos el margen */
+    flex-basis: 100px;
+    /* Ancho completo en pantallas pequeñas */
+    max-width: -60px;
+    /* Máximo ancho de las tarjetas */
+    margin: 30px auto;
+    /* Ajustamos el margen */
   }
   .card__description {
-    margin: 10px 0; /* Ajustamos el margen interno */
-    padding: 10px; /* Ajustamos el relleno de la descripción */
-    font-size: 14px; /* Ajustamos el tamaño de fuente */
+    margin: 10px 0;
+    /* Ajustamos el margen interno */
+    padding: 10px;
+    /* Ajustamos el relleno de la descripción */
+    font-size: 14px;
+    /* Ajustamos el tamaño de fuente */
   }
   .card__button {
-    margin: 10px 0; /* Ajustamos el margen del botón */
-    padding: 8px 12px; /* Ajustamos el relleno del botón */
-    font-size: 14px; /* Ajustamos el tamaño de fuente del botón */
+    margin: 10px 0;
+    /* Ajustamos el margen del botón */
+    padding: 8px 12px;
+    /* Ajustamos el relleno del botón */
+    font-size: 14px;
+    /* Ajustamos el tamaño de fuente del botón */
   }
 }
 /* Estilos para dispositivos móviles con un ancho máximo de 480px */
@@ -293,9 +312,12 @@ main {
     margin: 50px;
   }
   .card {
-    flex-basis: 360px; /* Ancho completo en pantallas pequeñas */
-    max-width: -40px; /* Máximo ancho de las tarjetas */
-    margin: 10px auto; /* Ajustamos el margen */
+    flex-basis: 360px;
+    /* Ancho completo en pantallas pequeñas */
+    max-width: -40px;
+    /* Máximo ancho de las tarjetas */
+    margin: 10px auto;
+    /* Ajustamos el margen */
   }
   .card img {
     padding: 10px;

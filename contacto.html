@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-Ar">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,23 @@
     <link rel="stylesheet" href="./style/style.css"> <!-- css-->
     <script src="./script.js"></script> <!--JS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img src="./img/logo_circular_new.png" alt="logo" width="50px" height="50px">
         <!--funcion para el menu-->
-        <a href="javascript:void(0);" onclick='openMenu()' id="menu"><i class="fa-solid fa-bars"></i></a> 
+        <a href="javascript:void(0);" onclick='openMenu()' id="menu"><i class="fa-solid fa-bars"></i></a>
         <!--BARRA NAEGACION-->
         <div class="search-bar">
             <input type="text" placeholder="Buscar...">
             <button type="submit"><i class="fa-solid fa-search"></i></button>
-          </div>
-          <!--*****************-->
+        </div>
+        <!--*****************-->
         <nav class="navbar">
-            <a href="./index.html" >Home</a>
+            <a href="./index.html">Home</a>
             <a href="./alta.html">Alta</a>
             <a href="./contacto.html" class="nav__active">Contacto</a>
             <a href="./nosotros.html">Nosotros</a>
@@ -32,7 +34,7 @@
     <!--script de fontawesome para traer los iconos-->
     <script src="https://kit.fontawesome.com/68d641df06.js" crossorigin="anonymous"></script>
 
-<!--****************INICIO MAIN***********-->
+    <!--****************INICIO MAIN***********-->
     <main>
         <div id="contac__container" class="contac__container">
             <h1>Formulario de Contacto:</h1>
@@ -50,14 +52,14 @@
                     <input type="email" id="mail" name="mail" required>
                     <p class="contac__msj" id="msj__contacMail"></p>
                 </div>
-                
+
 
                 <div class="comentario">
                     <label for="comentario">Comentario</label>
                     <textarea id="comentario" name="comentario" rows="4" cols="50" maxlength="200"
                         placeholder="maximo 200 caracteres "></textarea>
                 </div>
-                
+
                 <button type="submit" class="button__submit">Enviar</button>
 
             </form>
@@ -90,4 +92,5 @@
     </footer>
     <script src="./script.js"></script> <!--JS-->
 </body>
+
 </html>

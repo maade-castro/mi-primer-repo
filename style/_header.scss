@@ -9,45 +9,48 @@
     display: flex;
     align-items: center;
     margin: 30px;
-  }
-  
-  .search-bar input[type="text"] {
+}
+
+.search-bar input[type="text"] {
     padding: 10px;
     border: none;
     border-radius: 4px 0 0 4px;
     background-color: #cecccb;
-  }
-  
-  .search-bar button {
+}
+
+.search-bar button {
     background-color: #d26a08;
     border: none;
     color: #fff;
     padding: 10px 10px;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
-  }
+}
 
-  /***********NAvBAr****************/   
+/***********NAvBAr****************/
 .navbar {
     a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    margin: 10px 5px;
-    padding: 10px 10px;
-    border-radius: 30px; /* Redondear el fondo de cada enlace */
-    transition: background-color 0.3s ease;
-    font-family: 'Josefin Sans', sans-serif;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+        margin: 10px 5px;
+        padding: 10px 10px;
+        border-radius: 30px;
+        /* Redondear el fondo de cada enlace */
+        transition: background-color 0.3s ease;
+        font-family: 'Josefin Sans', sans-serif;
     }
+
     margin-left: auto;
     display: flex;
     width: 50%;
     justify-content: center;
 }
+
 /************HEADER********************/
-header{
+header {
     display: flex;
-    background-color:  #2D4F9D;
+    background-color: #2D4F9D;
     width: 100vw;
     height: 9vh;
     border-radius: 40px;
@@ -59,17 +62,18 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    
+
     img {
         border-radius: 80%;
         margin: 15px;
     }
 }
+
 /************FONDO BODY********************/
 body {
     background-image: url(../img/body.png);
     background-size: cover;
-    
+
 }
 
 .navbar a:hover {
@@ -77,7 +81,7 @@ body {
 }
 
 .nav__active {
-    background-color: rgb(223, 110, 29) ;
+    background-color: rgb(223, 110, 29);
 }
 
 #menu {
@@ -94,11 +98,13 @@ body {
         flex-direction: column;
         font-size: 0.9em;
         align-items: center;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Fondo degradado oscuro solo para el menú */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+        /* Fondo degradado oscuro solo para el menú */
         margin-top: 99%;
         height: 600%;
         position: absolute;
     }
+
     #menu {
         display: block;
         margin-left: auto;
@@ -107,18 +113,20 @@ body {
         color: white;
         transition: color 0.3s ease;
     }
-   
+
     #menu.open {
         color: black;
     }
 }
 
-@media (max-width: 829px){
- 
+@media (max-width: 829px) {
+
     header {
-        font-size: 5vw; /* Tamaño de fuente proporcional al tamaño del viewport */
+        font-size: 5vw;
+        /* Tamaño de fuente proporcional al tamaño del viewport */
         flex-direction: row-reverse;
         height: 10vh;
+
         img {
             margin: 10px 10px;
             width: 40px;
@@ -126,6 +134,7 @@ body {
             margin-right: 15px;
         }
     }
+
     #menu {
         font-size: 35px;
         margin-top: 0px;
@@ -133,10 +142,10 @@ body {
 }
 
 @media (max-width: 410px) {
- .search-bar {
-    display: flex;
-    align-items: center;
-    margin: 10px;
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin: 10px;
     }
 
     .search-bar input[type=text] {
@@ -146,13 +155,14 @@ body {
     .search-bar button {
         font-size: 10px;
     }
-    header{
+
+    header {
         width: 100%;
     }
 }
 
 /*************ICONO WHATSAPP***************/
-.ws__icon{
+.ws__icon {
     display: flex;
     justify-content: flex-end;
 }
